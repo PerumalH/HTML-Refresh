@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to an external CSS file -->
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+      }
+      .content {
+        flex: 1;
+      }
+      .content footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-left: 10px;
+        background-color: cadetblue;
+        width: 100%;
+      }
+      .w3-codespan {
+        color: rgb(255, 0, 119);
+      }
+      .content main {
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 50px;
+        width: 75%;
+      }
+      .content header h1 {
+        text-align: center;
+        background-color: black;
+        color: whitesmoke;
+        margin: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .content header nav ul {
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        background-color: rgb(0, 73, 100);
+      }
+      .content header nav ul li {
+        padding: 10px;
+        list-style: none;
+      }
+      .content header nav ul li a {
+        text-decoration: none;
+        color: rgb(231, 229, 234);
+      }
+      #tag dl {
+        padding-left: 20px;
+      }
+      #tag dl dt {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background-color: #f8a436;
+        width: 50%;
+        text-align: center;
+        border-radius: 5px;
+      }
+      #tag dl dd {
+        padding-top: 10px;
+      }
+      #tag dl dd a {
+        text-decoration: none;
+        background-color: rgba(13, 255, 118, 0.342);
+        color: rgb(8, 2, 2);
+        border-radius: 4px;
+      }
+      .iframes {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        margin-top: 75px;
+      }
+      iframe {
+        width: 100%;
+        height: 370px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content:target {
+        display: block;
+      }
+      #form div {
+        padding-top: 20px;
+      }
+      #form {
+        padding-top: 20px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>HTML Refresh</h1>
+        <nav>
+          <ul>
+            <li><a href="#introduction" class="tablink">Introduction</a></li>
+            <li><a href="#tag" class="tablink">HTML Tags</a></li>
+            <li><a href="#graphic" class="tablink">HTML Graphics</a></li>
+            <li><a href="#form" class="tablink">HTML Form</a></li>
+            <li><a href="#table" class="tablink">HTML Table</a></li>
+            <li><a href="#HTTP" class="tablink">About HTTP</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="introduction" class="tab-content">
+          <h2>Introduction</h2>
+          <p>
+            --- HTML stands for Hyper Text Markup Language. It is the standard
+            markup language used for creating web pages. HTML describes the
+            structure of a web page and consists of a series of elements. These
+            elements tell the browser how to display the content and label
+            pieces of content, such as "this is a heading," "this is a
+            paragraph," or "this is a link," etc.
+          </p>
+          <h1>Start Of Html</h1>
+          <ul>
+            <li>
+              The
+              <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> declaration
+              defines that this document is an HTML5 document
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;html&gt;</code> element is the
+              root element of an HTML page
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;head&gt;</code> element contains
+              meta information about the HTML page
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;title&gt;</code> element
+              specifies a title for the HTML page (which is shown in the
+              browser's title bar or in the page's tab)
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;body&gt;</code> element defines
+              the document's body, and is a container for all the visible
+              contents, such as headings, paragraphs, images, hyperlinks,
+              tables, lists, etc.
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;h1&gt;</code> element defines a
+              large heading
+            </li>
+            <li>
+              The <code class="w3-codespan">&lt;p&gt;</code> element defines a
+              paragraph
+            </li>
+          </ul>
+        </section>
+        <section id="tag" class="tab-content">
+          <h2>Tags:</h2>
+          <dl>
+            <dt>Formatting Tag</dt>
+            <dd><b>-Bold Text</b></dd>
+            <dd><strong>-Strong Text</strong></dd>
+            <dd><i>-Italict</i></dd>
+            <dd><em>-Emphasized Text</em></dd>
+            <dd>
+              <p>-<mark>Marked</mark> One</p>
+            </dd>
+            <dd><small>-small one</small></dd>
+            <dd><ins>-inserted One</ins></dd>
+            <dd>-this is<sub>subscript</sub></dd>
+            <dd>-this is<sup>superscript</sup></dd>
+            <dd>-this is <del>deleted one</del></dd>
+          </dl>
+          <dl>
+            <dt>Quotation and Citation</dt>
+            <dd>
+              -
+              <blockquote>
+                The blockquote element is used to define a quotation or
+                information from another source. The cite attribute can be used
+                to provide the source URL. It is used to indent the content.
+              </blockquote>
+            </dd>
+            <dd>-<q>the q element provide the quotation mark. </q></dd>
+            <dd>
+              - <abbr title="Hyper Text Markup Language">HTML</abbr>: the abbr
+              element define abbreviation.
+            </dd>
+            <dd>
+              - <cite>the cite element </cite>define something for creative
+              work's title, look same as cite.
+            </dd>
+            <dd>
+              -here it's google address, as using address element
+              <address>
+                1600 Amphitheatre Parkway in Mountain View, California.
+              </address>
+            </dd>
+            <dd>
+              this bdo element,
+              <bdo dir="rtl">make the words and sentence into backward</bdo>
+              write it as right to left.
+            </dd>
+          </dl>
+          <dl>
+            <dt>Link , img, iframe</dt>
+            <dd>
+              \\
+              <a href="iframe.html" target="frame1" class="button2">
+                Click Here</a
+              >
+              - the a element define as link, to helps redirect the resource
+              through URL attribute.
+              <p>\\ img - image store in another html file.</p>
+              <p>\\ iframe - it'll show that file.</p>
+              <p>\\IFrame - It's show source which redirect to it.</p>
+              <p>
+                \\<a href="http://" target="frame1" class="button1"
+                  >Click Here</a
+                >
+                - refresh the iframe
+              </p>
+              <p>
+                \\ for img - there're map, area tag for image map with clickable
+                area and picture tag which has source, img tag to show the image
+                based on the format and size.
+              </p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Computer Code</dt>
+            <dd>
+              --<code> (a+b)(a-b) </code>the code elements define user input
+              computer code.
+            </dd>
+            <dd>-- the kbd elememt defines keyboard <kbd>ctrl+s</kbd>.</dd>
+            <dd>
+              --
+              <samp>the samp element for computer program output format</samp>
+              as monospace font.
+            </dd>
+            <dd>
+              -
+              <pre>
+              the pre element 
+              define 
+              the preformatted, 
+              it'll shows as it is.
+            </pre
+              >
+            </dd>
+            <dd>
+              - the var element for mathematic expression <var>b * h</var>.
+            </dd>
+          </dl>
+          <dl>
+            <dt>Semantic elements</dt>
+            <dd>main - content of the document.</dd>
+            <dd>Section - chapter, introduction.</dd>
+            <dd>article - Product Card, Newspaper article.</dd>
+            <dd>header - intro.</dd>
+            <dd>footer - info.</dd>
+            <dd>nav - set of navigation link.</dd>
+            <dd>
+              aside -indirectly related to surrounding content like sidebar.
+            </dd>
+            <dd>
+              figure - it contain the img, figcaption for caption of image.
+            </dd>
+            <dd>
+              <details>
+                <summary>Open it</summary>
+                <p>
+                  details - it holds the details, with view and hide function.
+                  with summary element.
+                </p>
+              </details>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Block and Inline</dt>
+            <ol>
+              <li>Block - always start with new line like div, p, h3.</li>
+              <li>
+                Inline - we can add the tag inbetween any tag like span, b ,
+                strong.
+              </li>
+            </ol>
+          </dl>
+        </section>
+        <section id="form" class="tab-content">
+          <fieldset>
+            <legend>HTML Form</legend>
+            <form action="" method="post" target="frame1">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="" />
+              </div>
+              <div>
+                <label for="favourire_song">Favourite Song: </label>
+                <input list="song" />
+                <datalist id="song">
+                  <option value="The night we met"></option>
+                  <option value="I wanna be yours"></option>
+                  <option value="Those Eyes"></option>
+                </datalist>
+              </div>
+              <div>
+                <label for="">interests: </label>
+                <select name="interested" id="">
+                  <optgroup label="FrondEnd">
+                    <option value="">HTML, CSS</option>
+                    <option value="">JavaScript</option>
+                  </optgroup>
+                  <optgroup label="Programming Language">
+                    <option value="">Python</option>
+                    <option value="">JavaScript</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="Details">Details: </label>
+                <textarea name="Details" id=""></textarea>
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="" />
+              </div>
+              <div>
+                <label for="">Radio:</label>
+                <input type="radio" name="ok" id="" />
+                <input type="radio" name="ok" id="" />
+              </div>
+              <div>
+                <label for="">CheckBox:</label>
+                <input type="checkbox" name="run" />
+                <input type="checkbox" name="move" />
+              </div>
+              <div>
+                <label for="">ColorPicker: </label>
+                <input type="color" name="colorful" id="life" />
+              </div>
+              <div>
+                <label for="">datePicker:</label>
+
+                <input type="date" name="datepicker" id="" />
+              </div>
+              <div>
+                <label for="">datetime</label>
+                <input type="datetime" name="" id="" />
+              </div>
+              <div>
+                <label for="">datetime-local:</label>
+                <input type="datetime-local" name="" id="" />
+              </div>
+              <div>
+                <label for="">Email: </label>
+                <input type="email" name="" id="" />
+              </div>
+              <div>
+                <label for="">FilePicker: </label>
+                <input type="file" name="" id="" />
+              </div>
+              <div>
+                <label for="">Hidden: it's basically unseen for user</label>
+                <input type="hidden" name="" />
+              </div>
+              <div>
+                <label for="">Month: </label>
+                <input type="month" name="" id="" />
+              </div>
+              <div>
+                <label for="">Week:</label>
+                <input type="week" name="" id="" />
+              </div>
+              <div>
+                <label for="">Number: </label>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  step="4"
+                  value="9"
+                  readonly
+                />
+              </div>
+              <div>
+                <label for="">Url: </label>
+                <input type="url" name="" id="" disabled />
+              </div>
+              <div>
+                <label for=""> Range:</label>
+                <input type="range" name="" id="" value="90" />
+              </div>
+              <div>
+                <label for="">Telephone: </label>
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  pattern="[0-9]{5}-[0-9]{5}"
+                  placeholder="22222-11111"
+                  required
+                />
+              </div>
+              <div>
+                <label for="">Search: </label>
+                <input type="search" name="" id="" />
+              </div>
+              <div>
+                <input
+                  type="image"
+                  src="Luffy-9.jpg"
+                  alt="Click here"
+                  width="100px"
+                />
+              </div>
+              <div>
+                <input type="reset" value="reset" />
+              </div>
+              <div><button type="button">Done</button></div>
+              <div><input type="submit" value="Submit" /></div>
+              <div></div>
+            </form>
+          </fieldset>
+        </section>
+        <section id="table" class="tab-content">
+          <table>
+            <caption>
+              Comparison
+            </caption>
+            <colgroup>
+              <col style="background-color: #f8a436" />
+              <col style="background-color: aliceblue" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Person 1</th>
+                <th>Person 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Risk</th>
+                <td>Taken</td>
+                <td>Never</td>
+              </tr>
+              <tr>
+                <th>learning</th>
+                <td>Daily</td>
+                <td>Needed Time</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">you need to done what need to done.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section id="graphic" class="tab-content">
+          <h2>Contact</h2>
+          <p>Here you can add your graphic details or a graphic form.</p>
+        </section>
+        <section id="HTTP" class="tab-content">
+          <h2>Contact</h2>
+          <p>Here you can add your graphic details or a graphic form.</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Perumal HpK. All rights reserved.</p>
+      </footer>
+    </div>
+    <div class="iframes">
+      <iframe
+        name="frame1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe>
+    </div>
+    <script src="script.js"></script>
+    <!-- Link to an external JavaScript file -->
+  </body>
+</html>
